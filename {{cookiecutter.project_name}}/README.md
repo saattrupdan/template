@@ -14,14 +14,14 @@
 
 {{ cookiecutter.project_description }}
 
-______________________________________________________________________
+---
+
 [![Code Coverage](https://img.shields.io/badge/Coverage-0%25-red.svg)](https://github.com/alexandrainst/{{cookiecutter.project_name}}/tree/main/tests)
 {% if cookiecutter.open_source == 'y' -%}
 [![License](https://img.shields.io/github/license/alexandrainst/{{cookiecutter.project_name}})](https://github.com/alexandrainst/{{cookiecutter.project_name}}/blob/main/LICENSE)
 [![LastCommit](https://img.shields.io/github/last-commit/alexandrainst/{{cookiecutter.project_name}})](https://github.com/alexandrainst/{{cookiecutter.project_name}}/commits/main)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](https://github.com/alexandrainst/{{cookiecutter.project_name}}/blob/main/CODE_OF_CONDUCT.md)
-{% endif %}
-Developer:
+{% endif %} Developer:
 
 - {{ cookiecutter.author_name }} (<{{ cookiecutter.email }}>)
 
@@ -73,8 +73,8 @@ and `scripts`. This is a brief explanation of the differences between the two.
 ### Modules
 
 All Python files in the `{{ cookiecutter.project_name }}` directory are _modules_
-internal to the project package. Examples here could be a general data loading script,
-a definition of a model, or a training function. Think of modules as all the building
+internal to the project package. Examples here could be a general data loading script, a
+definition of a model, or a training function. Think of modules as all the building
 blocks of a project.
 
 When a module is importing functions/classes from other modules we use the _relative
@@ -86,11 +86,11 @@ from .other_module import some_function
 
 ### Scripts
 
-Python files in the `scripts` folder are scripts, which are short code snippets that
-are _external_ to the project package, and which is meant to actually run the code. As
-such, _only_ scripts will be called from the terminal. An analogy here is that the
-internal `numpy` code are all modules, but the Python code you write where you import
-some `numpy` functions and actually run them, that a script.
+Python files in the `scripts` folder are scripts, which are short code snippets that are
+_external_ to the project package, and which is meant to actually run the code. As such,
+_only_ scripts will be called from the terminal. An analogy here is that the internal
+`numpy` code are all modules, but the Python code you write where you import some
+`numpy` functions and actually run them, that a script.
 
 When importing module functions/classes when you're in a script, you do it like you
 would normally import from any other package:
