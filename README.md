@@ -1,20 +1,6 @@
-<!-- This disables the "First line in file should be a top level heading" rule -->
-<!-- markdownlint-disable MD041 -->
-<a href="https://github.com/alexandrainst/{{ cookiecutter.project_name }}">
-<img
- src="https://filedn.com/lRBwPhPxgV74tO0rDoe8SpH/alexandra/alexandra-logo.jpeg"
- width="239"
- height="175"
- align="right"
- alt="Alexandra Institute Logo"
-/>
-</a>
+# Machine Learning Repository Template
 
-# Alexandra Institute Machine Learning Repository Template
-
-This repository is a template for a Python-based data science project within the
-Alexandra Institute, and is the project structure we frequently use in our data science
-projects.
+This repository is a template for a Python-based data science project.
 
 ## Quickstart
 
@@ -26,7 +12,7 @@ pip3 install cookiecutter
 Create a project based on the template (the `-f` flag ensures that you use the newest
 version of the template):
 ```
-cookiecutter -f gh:alexandrainst/alexandra-ml-template
+cookiecutter -f gh:saattrupdan/template
 ```
 
 
@@ -62,5 +48,5 @@ for the repository (can be enabled on Github in the repository settings).
 Code Spaces is a new feature on Github that allows you to develop on a project
 completely in the cloud, without having to do any local setup at all. This repo comes
 included with a configuration file for running code spaces on Github. When hosted on
-`alexandrainst/<project-name>`, simply press the `<> Code` button and add a code space
+`saattrupdan/<project-name>`, simply press the `<> Code` button and add a code space
 to get started, which will open a VSCode window directly in your browser.

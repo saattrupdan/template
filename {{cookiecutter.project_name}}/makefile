@@ -85,7 +85,7 @@ add-repo-to-git:
 		git commit --quiet -m "Initial commit"; \
 	fi
 	@if [ "$(shell git remote)" = "" ]; then \
-		git remote add origin git@github.com:alexandrainst/{{ cookiecutter.project_name }}.git; \
+		git remote add origin git@github.com:{{ cookiecutter.github_org }}/{{ cookiecutter.project_name }}.git; \
 	fi
 
 test:  ## Run tests
