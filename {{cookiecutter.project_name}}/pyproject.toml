@@ -41,6 +41,8 @@ dev = [
   "nbstripout>={{ cookiecutter._nbstripout_version }}",
   "coverage>={{ cookiecutter._coverage_version }}",
   "pip>={{ cookiecutter._pip_version }}",
+  "vulture>={{ cookiecutter._vulture_version }}",
+  "slopo>={{ cookiecutter._slopo_version }}",
 ]
 
 [tool.ruff]
