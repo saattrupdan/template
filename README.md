@@ -15,6 +15,16 @@ version of the template):
 cookiecutter -f gh:saattrupdan/template
 ```
 
+## Root development checks
+
+From the repository root, install the pinned test and check dependencies with uv and run
+these commands:
+
+```sh
+uv sync
+uv run ruff check tests
+uv run pytest tests/test_template_generation.py
+```
 
 ## Features
 
