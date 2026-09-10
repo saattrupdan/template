@@ -42,7 +42,11 @@ jobs:
       pull-requests: write
     strategy:
         matrix:
+            {% if cookiecutter.open_source == 'y' -%}
+            os: [windows-latest, macos-latest, ubuntu-latest]
+            {%- else -%}
             os: [ubuntu-latest]
+            {%- endif %}
             python-version: ["{{ cookiecutter.python_version }}"]
     runs-on: {% raw %}${{ matrix.os }}{% endraw %}
     steps:
